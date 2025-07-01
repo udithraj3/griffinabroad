@@ -1,0 +1,297 @@
+<!── Project: Griffin Abroad Website ──>
+
+📂 griffinabroad/
+├── index.html
+├── about.html
+├── services.html
+├── portfolio.html
+├── contact.html
+├── css/
+│   └── style.css
+└── assets/
+    └── logo.png (place your provided logo here)
+
+────────────────────────────────────────────────────────
+
+/* ------------------- css/style.css ------------------- */
+/* Basic reset & typography */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+a { text-decoration: none; color: inherit; }
+img { max-width: 100%; display: block; }
+.container { max-width: 1000px; margin: 0 auto; padding: 0 1rem; }
+
+/* Header & Nav */
+header {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+}
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #f7f7f7;
+  margin-top: 2rem;
+}
+
+/* Sections */nsection {
+  padding: 3rem 0;
+}
+h1, h2 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+p { margin-bottom: 1rem; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links { flex-direction: column; gap: 0.5rem; }
+}
+
+────────────────────────────────────────────────────────
+
+<!-- ─── index.html ─── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Griffin Abroad | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container navbar">
+      <a href="index.html"><img src="assets/logo.png" alt="Griffin Abroad Logo" width="120"></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="container">
+      <h1>Empower Your Global Education Journey</h1>
+      <p>At Griffin Abroad, we provide top-tier branding, marketing, and digital solutions to help you navigate and succeed in international education.</p>
+      <a href="contact.html" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- What We Do -->
+  <section id="services">
+    <div class="container">
+      <h2>Our Expertise</h2>
+      <div class="grid">
+        <div>
+          <h3>Branding & Identity</h3>
+          <p>Crafting memorable brands that resonate globally.</p>
+        </div>
+        <div>
+          <h3>Web Development</h3>
+          <p>Responsive, modern websites tailored to your needs.</p>
+        </div>
+        <div>
+          <h3>Digital Marketing</h3>
+          <p>Targeted campaigns that drive engagement and growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Griffin Abroad. All Rights Reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+────────────────────────────────────────────────────────
+
+<!-- ─── about.html ─── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Griffin Abroad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar container">
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>About Griffin Abroad</h1>
+      <p>Griffin Abroad was founded to bridge the gap between ambitious students and global opportunities. Our team of experts in marketing, branding, and digital strategy is dedicated to crafting personalized journeys that lead to academic success abroad.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Griffin Abroad.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+────────────────────────────────────────────────────────
+
+<!-- ─── services.html ─── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Griffin Abroad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar container">
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Our Services</h1>
+      <ul>
+        <li><strong>Branding & Identity:</strong> Logo design, brand guidelines, messaging strategy.</li>
+        <li><strong>Website Development:</strong> Custom sites, responsive design, SEO optimization.</li>
+        <li><strong>Digital Marketing:</strong> SEO, SEM, social media ads, content creation.</li>
+        <li><strong>Content Creation:</strong> Blog posts, videos, infographics, e-books.</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Griffin Abroad.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+────────────────────────────────────────────────────────
+
+<!-- ─── portfolio.html ─── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Griffin Abroad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar container">
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Our Work</h1>
+      <p>Coming soon—our case studies and success stories showcasing the impact of Griffin Abroad’s strategies.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Griffin Abroad.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+────────────────────────────────────────────────────────
+
+<!-- ─── contact.html ─── -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Griffin Abroad</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="navbar container">
+    <a href="index.html"><img src="assets/logo.png" alt="Logo" width="120"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <form action="https://formspree.io/f/your-form-id" method="POST">
+        <label>Name:</label>
+        <input type="text" name="name" required>
+        <label>Email:</label>
+        <input type="email" name="email" required>
+        <label>Message:</label>
+        <textarea name="message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Griffin Abroad.</p>
+    </div>
+  </footer>
+</body>
+</html>
